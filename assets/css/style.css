@@ -1,2 +1,58 @@
+/* Grid layout */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    grid-template-areas:
+        "header header header"
+        "hero    hero    hero"
+        "....... main  ......"
+        "footer footer footer";
+}
+
+@media screen and(min-width: 860px){
+
+    body {
+        grid-template-columns: 1rem minmax(200px, 600px) minmax(200px, 600px) minmax(200px, 600px) 1rem;
+        grid-template-areas:
+            "header header header header header"
+            "hero   hero    hero   hero    hero"
+            "...... main   main   main ....... "
+            "footer footer footer footer footer";
+    }
+}
+
+header {
+    grid-area: header;
+}
+
+.hero_image {
+    grid-area: hero;
+}
+
+.main_content {
+    grid-area: main;
+}
+
+footer {
+    margin-top: auto;
+    grid-area: footer;
+}
+
+/* grid Homepage Only */
+
+#article1 {}
+
+#article2 {}
+
+#article3 {}
+
 /* Header */
 
+/* Footer*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
