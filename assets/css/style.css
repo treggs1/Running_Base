@@ -31,7 +31,6 @@ header {
 
 #hero_section {
     grid-area: hero;
-    background-image: url(../images/193_00758.jpg);
 }
 
 .main_content {
@@ -63,6 +62,12 @@ footer {
 
 /* Nav Bar */
 
+.navbar-brand {
+    font-size:35px;
+    font-weight:600;
+    text-transform:uppercase;   
+}
+
 .navbar,
 .navbar-collapse {
     float:none;
@@ -80,14 +85,43 @@ footer {
     }
 }
 
+/* navbar underline from left taken from hover.css https://ianlunn.github.io/Hover/ */
+.nav-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #4a4e50;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
+    right: 0;
+  }
+
 /* Hero Section */
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 #hero_section {
-    background-image: url(../images/193_00758.jpg) no-repeat center center;
+    background-image: url(../images/193_00758.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height:600px;
     width: 100%;
     overflow: hidden;
@@ -95,9 +129,15 @@ footer {
 }
 
 #hero_style {
+    position: absolute;
     max-width: 55rem;
-    margin-inline: auto;
     padding-inline: 1rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
 /* Footer*/
