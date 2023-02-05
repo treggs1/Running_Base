@@ -1,6 +1,7 @@
 /* Grid layout */
 
 body {
+    margin: 0;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1rem 1fr 1rem;
@@ -28,8 +29,9 @@ header {
     grid-area: header;
 }
 
-.hero_image {
+#hero_section {
     grid-area: hero;
+    background-image: url(../images/193_00758.jpg);
 }
 
 .main_content {
@@ -78,7 +80,25 @@ footer {
     }
 }
 
-/* Header */
+/* Hero Section */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#hero_section {
+    background-image: url(../images/193_00758.jpg) no-repeat center center;
+    height:600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero_style {
+    max-width: 55rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
 
 /* Footer*/
 
