@@ -42,24 +42,6 @@ footer {
     grid-area: footer;
 }
 
-/* Grid Homepage Only */
-
-#hero_home {
-    display: grid;
-    grid-template-areas: "stack";
-    place-items: center;
-}
-
-#hero_home > * {
-    grid-area: stack;
-}
-
-#article1 {}
-
-#article2 {}
-
-#article3 {}
-
 /* Nav Bar */
 
 .navbar-brand {
@@ -86,6 +68,7 @@ footer {
 }
 
 /* navbar underline from left taken from hover.css https://ianlunn.github.io/Hover/ */
+
 .nav-link {
     display: inline-block;
     vertical-align: middle;
@@ -95,10 +78,11 @@ footer {
     position: relative;
     overflow: hidden;
   }
+
   .nav-link:before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     left: 0;
     right: 100%;
     bottom: 0;
@@ -111,9 +95,22 @@ footer {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
+
   .nav-link:hover:before, .nav-link:focus:before, .nav-link:active:before {
     right: 0;
   }
+
+  /* modification to make underline permanent on active page */
+  .active:before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #4a4e50;
+    height: 4px;
+    } 
 
 /* Hero Section */
 
@@ -145,7 +142,6 @@ footer {
 .main_content {
     padding: 50px 0px 50px 0px;
     align-items: center;
-    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -160,14 +156,9 @@ footer {
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
-    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
-
-#footer_social {
-    
 }
 
 #footer_social ul {
@@ -188,4 +179,56 @@ footer {
 
 #footer_social i:hover {
     transform: scale(1.5);
+}
+
+/* Responsive */
+
+@media (min-width: 576px) {
+    footer {
+        max-width: 540px;
+    }
+
+    .main_content {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        max-width: 720px;
+    }
+
+    .main_content {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        max-width: 960px;
+    }
+
+    .main_content {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        max-width: 1140px;
+    }
+
+    .main_content {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {    
+    footer {
+        max-width: 1320px;
+    }
+
+    .main_content {
+        max-width: 1320px;
+    }
 }
