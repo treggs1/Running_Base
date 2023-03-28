@@ -50,11 +50,20 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-
 ### User Stories
 
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
+#### First Time Visitor Goals
+
+* I want to be able to easily understand what the site is about.
+* I want to be able to find the information I need and navigate to it quickly.
+* I want to be able to find social madia links easily.
+* As a beginner, I want to learn how to run properly.
+* I want to improve my running skills and get faster.
+
+#### Returning Visitor Goals
+
+* I want to quickly get back to the information I need with minimal clicks.
+* I want to be able to contact Running Base to ask for aditional information if needed.
 
 ## Design
 
@@ -108,15 +117,7 @@ What features would you like to implement in the future on your site? Would you 
 
 ### Accessibility
 
-Be an amazing developer and get used to thinking about accessibility in all of your projects!
-
-This is the place to make a note of anything you have done with accessibility in mind. Some examples include:
-
-Have you used icons and added aria-labels to enable screen readers to understand these?
-Have you ensured your site meets the minimum contrast requirements?
-Have you chosen fonts that are dyslexia/accessible friendly?
-
-Code Institute have an amazing channel for all things accessibility (a11y-accessibility) I would highly recommend joining this channel as it contains a wealth of information about accessibility and what we can do as developers to be more inclusive.
+I have made every effort to increase the accessibility of the website. I have incorporated various features such as aria-labels for social media icons to enable easy use of screen readers by all individuals. Additionally, I have added a span over the hero background image to enable screen readers to provide a comprehensive description of the content. To ensure further accessibility, I have used semantic HTML throughout the website.
 
 ## Technologies Used
 
