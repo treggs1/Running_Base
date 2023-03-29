@@ -49,13 +49,17 @@
     <section id="hero_section">
         <span role="img" aria-label="Background image of people running in the countryside"> </span>
         <div id="hero_style">
-            <h1>Start Strong, Finish Stronger: Your Guide to Base Fitness for Running</h1>
+            <h1>Heart Rate Zone Calculator</h1>
         </div>
     </section>
     <!-- Main Page Content Section -->
     <main class="main_content_section" aria-label="Main Content">
         <div class="main_content">
-            
+        <form>
+                <label for="maxHeartRate">Enter your maximum heart rate:</label>
+                <input type="number" id="maxHeartRate" name="maxHeartRate">
+                <button type="submit">Calculate</button>
+            </form>
         </div>
     </main>
     <!-- Footer  -->
