@@ -31,15 +31,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="index.html" class="nav-link" aria-label="Home">Home</a></li>
-                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Drop-down Menu">Running</a>
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle active"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                aria-label="Drop-down Menu">Running</a>
                             <ul class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
-                                <li><a href="building-your-base.html" class="dropdown-item" aria-label="Building Your Base">Building Your Base</a></li>
-                                <li><a href="heart-rate-zones.html" class="dropdown-item" aria-label="Heart Rate Zones">Heart Rate Zones</a></li>
-                                <li><a href="hrzonecalculator.html" class="dropdown-item" aria-label="Heart Rate Zone Calculator">HR Zone Calculator</a></li>
+                                <li><a href="building-your-base.html" class="dropdown-item"
+                                        aria-label="Building Your Base">Building Your Base</a></li>
+                                <li><a href="heart-rate-zones.html" class="dropdown-item"
+                                        aria-label="Heart Rate Zones">Heart Rate Zones</a></li>
+                                <li><a href="hrzonecalculator.html" class="dropdown-item"
+                                        aria-label="Heart Rate Zone Calculator">HR Zone Calculator</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="contact-us.html" class="nav-link" aria-label="Contact Us">Contact Us</a></li>
+                        <li class="nav-item"><a href="contact-us.html" class="nav-link" aria-label="Contact Us">Contact
+                                Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,10 +60,20 @@
     <!-- Main Page Content Section -->
     <main class="main_content_section" aria-label="Main Content">
         <div class="main_content">
-        <form class="form-Wrapper">
-                <label for="maxHeartRate">Enter your maximum heart rate:</label>
-                <input type="number" id="maxHeartRate" name="maxHeartRate">
-                <button type="submit">Calculate</button>
+            <form class="form-Wrapper">
+                <fieldset class="contact-form_Wrapper">
+                    <legend>HR Zone Calculator</legend>
+                    <b>Note: an asterisk (*) indicates a required field</b>
+                    <div class="form-Input_Wrapper">
+                        <input type="number" id="age" name="age">
+                        <label for="maxHeartRate">Age:</label>
+                    </div>
+                    <div class="form-Input_Wrapper">
+                        <input type="number" id="maxHeartRate" name="maxHeartRate" required>
+                        <label for="maxHeartRate">Enter your maximum heart rate:</label>
+                    </div>
+                    <button type="submit">Calculate</button>
+                </fieldset>
             </form>
         </div>
     </main>
@@ -69,10 +84,14 @@
         </div>
         <div id="footer_social">
             <ul>
-                <li><a href="http://www.youtube.com" target="_blank" aria-label="Link to our Youtube channel"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="http://www.twitter.com" target="_blank" aria-label="Link to our Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="http://www.facebook.com" target="_blank" aria-label="Link to our Facebook page"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="http://www.instagram.com" target="_blank"aria-label="Link to our Instagram page"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="http://www.youtube.com" target="_blank" aria-label="Link to our Youtube channel"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="http://www.twitter.com" target="_blank" aria-label="Link to our Twitter"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="http://www.facebook.com" target="_blank" aria-label="Link to our Facebook page"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="http://www.instagram.com" target="_blank" aria-label="Link to our Instagram page"><i
+                            class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
     </footer>
@@ -80,7 +99,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+<!-- script to set maxHeartRate form field to 220 - age modified from https://stackoverflow.com/questions/2004315/populate-1-form-field-based-on-another -->
+    <script>
+var first = document.getElementById('age'),
+    second = document.getElementById('maxHeartRate');
 
+second.value = first.value;
+
+first.onchange = function () {
+  second.value = 220 - first.value;
+};
+    </script>
 </body>
 
 </html>
