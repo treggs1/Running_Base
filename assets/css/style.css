@@ -191,7 +191,7 @@ footer {
     transform: scale(1.5);
 }
 
-/* Responsive */
+/* Responsive Footer using same breakpoints and max-width as bootstrap header */
 
 @media (min-width: 576px) {
     footer {
@@ -273,7 +273,6 @@ fieldset {
     margin-bottom: 5px;
 }
 
-/*Note we are using a reverse order for flex-direction to make labels appear before the input*/
 @media (min-width: 800px) {
     .form-Input_Wrapper {
         flex-direction: row-reverse;
@@ -334,7 +333,7 @@ input:focus:placeholder-shown, textarea:focus:placeholder-shown {
     color: #555;
 }
 
-/*legends and inputs*/
+/* legends and inputs */
 .contact-form_Wrapper {
     --caretColor: #4a4e50
 }
@@ -346,12 +345,12 @@ input:focus:placeholder-shown, textarea:focus:placeholder-shown {
     box-shadow: inset 0 -3px 0 #4a4e50, 0 0 15px 5px #ebebeb;
 }
 
-/*Make all inputs scale up when they get focus*/
+/* Make all inputs scale up when they get focus */
 .form-Input_Wrapper input:focus, .form-Input_Wrapper textarea:focus {
     transform: scale(1.06);
 }
 
-/* basic styling to indicate that fields are required */
+/* Basic styling to indicate that fields are required */
 input:required + label:after, textarea:required + label:after {
     content: "*";
     font-size: 2em;
@@ -370,7 +369,7 @@ input:required:valid + label:after, textarea:required:valid + label:after {
 color: green;
 }
 
-/*Submit button flipper*/
+/* Submit button flipper */
 .form-Submit_Btn {
     appearance: none;
     border: 0;
@@ -426,4 +425,14 @@ color: green;
 .form-Submit_Btn:hover .flipper-vertical,
 .form-Submit_Btn:focus .flipper-vertical {
     transform: rotateX(180deg);
+}
+
+/* Heart rate zone calculator styling */
+
+.h2Style {
+    text-align: center;
+}
+
+.hrTable {
+    max-width: 800px;
 }
