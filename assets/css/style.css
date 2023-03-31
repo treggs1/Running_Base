@@ -248,6 +248,7 @@ footer {
 fieldset {
     border-radius: 3px;
     border: 1px solid #666;
+    padding: 12px;
 }
 
 .form-Wrapper {
@@ -268,7 +269,7 @@ fieldset {
 }
 
 .form-Input_Wrapper label {
-    color: 888;
+    color: #888;
     font-size: 15px;
     margin-bottom: 5px;
 }
@@ -300,6 +301,8 @@ legend {
     color: #fff;
     margin-bottom: 10px;
     border-radius: 2px;
+    width: auto;
+    float: none;
 }
 
 input, textarea {
