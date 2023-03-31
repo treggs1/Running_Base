@@ -63,10 +63,52 @@
     <!-- Main Page Content Section -->
     <main class="main_content_section" aria-label="Main Content">
         <div class="main_content">
-            <iframe width="100%" height="100%" src="http://hiit-tech.com/hrcalculator.php"></iframe>
+            <form class="form-Wrapper">
+                <fieldset class="contact-form_Wrapper">
+                    <legend>HR Zone Calculator</legend>
+                    <b>Note: an asterisk (*) indicates a required field</b>
+                    <div class="form-Input_Wrapper">
+                        <input type="number" id="age" name="age">
+                        <label for="maxHeartRate">Age:</label>
+                    </div>
+                    <div class="form-Input_Wrapper">
+                        <input type="number" id="maxHeartRate" name="maxHeartRate" required>
+                        <label for="maxHeartRate">Enter your maximum heart rate:</label>
+                    </div>
+                    <button type="submit">Calculate</button>
+                </fieldset>
+            </form>
+            <hr>
+            <h2 class="h2Style">Heart Rate Zone</h2>
+            <table class="table table-striped hrTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Zone</th>
+                        <th scope="col">Target Heart Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if (isset($_GET['maxHeartRate'])) {
+                        $maxHeartRate = $_GET['maxHeartRate'];
+                        $zones = array(
+                            array("Zone 1: Very Light", $maxHeartRate * 0.5, $maxHeartRate * 0.6),
+                            array("Zone 2: Light", $maxHeartRate * 0.6, $maxHeartRate * 0.7),
+                            array("Zone 3: Moderate", $maxHeartRate * 0.7, $maxHeartRate * 0.8),
+                            array("Zone 4: Hard", $maxHeartRate * 0.8, $maxHeartRate * 0.9),
+                            array("Zone 5: Max", $maxHeartRate * 0.9, $maxHeartRate),
+                        );
+                        foreach ($zones as list($zone, $min, $max)) {
+                            $targetRange = "$min - $max";
+                            echo "<tr><td>$zone</td><td>$targetRange bpm</td></tr>";
+                        }
+                    }
+                    ?>
+                </tbody>
+            </table>
         </div>
     </main>
-    
+
     <!-- Footer  -->
     <footer>
         <div>
@@ -85,20 +127,22 @@
             </ul>
         </div>
     </footer>
+
     <!-- Bootstrap Javascript  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
-<!-- script to set maxHeartRate form field to 220 - age modified from https://stackoverflow.com/questions/2004315/populate-1-form-field-based-on-another -->
+
+    <!-- script to set maxHeartRate form field to 220 - age modified from https://stackoverflow.com/questions/2004315/populate-1-form-field-based-on-another -->
     <script>
-var first = document.getElementById('age'),
-    second = document.getElementById('maxHeartRate');
+       var first = document.getElementById('age'),
+       second = document.getElementById('maxHeartRate');
 
-second.value = first.value;
+       second.value = first.value;
 
-first.onchange = function () {
-  second.value = 220 - first.value;
-};
+       first.onchange = function () {
+       second.value = 220 - first.value;
+       };
     </script>
 </body>
 
