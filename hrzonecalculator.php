@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b2ef2e6fc4.js" crossorigin="anonymous"></script>
 
@@ -39,7 +40,7 @@
                                         aria-label="Building Your Base">Building Your Base</a></li>
                                 <li><a href="heart-rate-zones.html" class="dropdown-item"
                                         aria-label="Heart Rate Zones">Heart Rate Zones</a></li>
-                                <li><a href="hrzonecalculator.html" class="dropdown-item"
+                                <li><a href="hrzonecalculator.php" class="dropdown-item"
                                         aria-label="Heart Rate Zone Calculator">HR Zone Calculator</a></li>
                             </ul>
                         </li>
@@ -50,6 +51,7 @@
             </div>
         </nav>
     </header>
+
     <!-- Hero Image -->
     <section id="hero_section">
         <span role="img" aria-label="Background image of people running in the countryside"> </span>
@@ -57,12 +59,14 @@
             <h1>Heart Rate Zone Calculator</h1>
         </div>
     </section>
+
     <!-- Main Page Content Section -->
     <main class="main_content_section" aria-label="Main Content">
         <div class="main_content">
             <iframe width="100%" height="100%" src="http://hiit-tech.com/hrcalculator.php"></iframe>
         </div>
     </main>
+    
     <!-- Footer  -->
     <footer>
         <div>
