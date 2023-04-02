@@ -441,3 +441,40 @@ color: green;
     margin-left: auto;
     margin-right: auto;
 }
+
+/* HR Zones Styles */
+
+#zone1 {
+    font-size: 1.5em;
+    background-color: #dadada;
+    width: 60%;
+    padding: 0.2em;
+}
+
+#zone2 {
+    font-size: 1.5em;
+    background-color: #1eb9db;
+    width: 70%;
+    padding: 0.3em;
+}
+
+#zone3 {
+    font-size: 1.5em;
+    background-color: #a3b928;
+    width: 80%;
+    padding: 0.2em;
+}
+
+#zone4 {
+    font-size: 1.5em;
+    background-color: #f8c400;
+    width: 90%;
+    padding: 0.2em;
+}
+
+#zone5 {
+    font-size: 1.5em;
+    background-color: #d02d2d;
+    width: 100%;
+    padding: 0.2em;   
+}
