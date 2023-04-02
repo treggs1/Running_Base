@@ -15,7 +15,7 @@
 
     <!-- Internal CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Running Base</title>
+    <title>Running Base - Heart Rate Zone Calculator</title>
 </head>
 
 <body>
