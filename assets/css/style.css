@@ -6,9 +6,14 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;   
+}
 /* Grid layout */
 
 body {
@@ -58,7 +63,15 @@ footer {
     font-size:35px;
     font-weight:600;
     text-transform:uppercase;   
+    font-family: 'Orbitron', sans-serif;
 }
+
+@media (max-width: 400px) {
+    .navbar-brand {
+        font-size:25px;
+    }
+}
+
 
 .navbar,
 .navbar-collapse {
@@ -197,7 +210,7 @@ footer {
     transform: scale(1.5);
 }
 
-/* Responsive Footer using same breakpoints and max-width as bootstrap header */
+/* Responsive Footer and content using same breakpoints and max-width as bootstrap header */
 
 @media (min-width: 576px) {
     footer {
