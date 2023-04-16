@@ -91,22 +91,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    if (isset($_GET['maxHeartRate'])) {
-                        $maxHeartRate = $_GET['maxHeartRate'];
-                        $zones = array(
-                            array("Zone 1: Very Light", $maxHeartRate * 0.5, $maxHeartRate * 0.6),
-                            array("Zone 2: Light", $maxHeartRate * 0.6, $maxHeartRate * 0.7),
-                            array("Zone 3: Moderate", $maxHeartRate * 0.7, $maxHeartRate * 0.8),
-                            array("Zone 4: Hard", $maxHeartRate * 0.8, $maxHeartRate * 0.9),
-                            array("Zone 5: Max", $maxHeartRate * 0.9, $maxHeartRate),
-                        );
-                        foreach ($zones as list($zone, $min, $max)) {
-                            $targetRange = "$min - $max";
-                            echo "<tr><td>$zone</td><td>$targetRange bpm</td></tr>";
-                        }
-                    }
-                    ?>
+                    
                 </tbody>
             </table>
         </div>
