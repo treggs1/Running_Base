@@ -66,7 +66,7 @@
     <!-- Main Page Content Section -->
     <main class="main_content_section" aria-label="Main Content">
         <div class="main_content">
-            <form class="form-Wrapper">
+            <form class="form-Wrapper" id="max-hr-form">
                 <fieldset class="contact-form_Wrapper">
                     <legend>HR Zone Calculator</legend>
                     <b>Note: an asterisk (*) indicates a required field</b>
@@ -132,6 +132,29 @@
        second.value = 220 - first.value;
        };
     </script>
+    <script>
+        // Target input form to get required data
+        const form = document.getElementById('max-hr-form');
+        // Target correct part of table for the output
+        const tableContent = document.querySelector('#zones-table tbody');
+
+        // listen for the form to be submitted
+        form.addEventListener('submit', event => {
+        // Prevent the form default submit action
+        event.preventDefault();
+        // get max heart rate from form for calculations
+        const maxHeartRate = Number(document.getElementById('maxHeartRate').value);
+        //two-dimensional array used to set zone name and calculate min-max of each zone
+        const zones = [
+            ["Zone 1: Low Intensity", maxHeartRate * 0.5, maxHeartRate * 0.6],
+            ["Zone 2: Weight Control", maxHeartRate * 0.6, maxHeartRate * 0.7],
+            ["Zone 3: Aerobic", maxHeartRate * 0.7, maxHeartRate * 0.8],
+            ["Zone 4: Anaerobic", maxHeartRate * 0.8, maxHeartRate * 0.9],
+            ["Zone 5: Maximum", maxHeartRate * 0.9, maxHeartRate],
+            ];
+    });
+    </script>
+    
 </body>
 
 </html>
