@@ -72,7 +72,7 @@
                     <b>Note: an asterisk (*) indicates a required field</b>
                     <div class="form-Input_Wrapper">
                         <input type="number" id="age" name="age">
-                        <label for="maxHeartRate">Age:</label>
+                        <label for="Age">Age:</label>
                     </div>
                     <div class="form-Input_Wrapper">
                         <input type="number" id="maxHeartRate" name="maxHeartRate" required>
@@ -83,7 +83,7 @@
             </form>
             <hr>
             <h2 class="h2Style">Heart Rate Zone</h2>
-            <table class="table table-striped hrTable">
+            <table class="table table-striped hrTable" id="zones-table">
                 <thead>
                     <tr>
                         <th scope="col">Zone</th>
@@ -92,6 +92,42 @@
                 </thead>
                 <tbody>
                     
+                    <script>
+                        // Target input form to get required data
+                        const form = document.getElementById('max-hr-form');
+                        // Target correct part of table for the output
+                        const tableBody = document.querySelector('#zones-table tbody');
+                        // Listen for the form to be submitted
+                        form.addEventListener('submit', event => {
+                        // Prevent the form default submit action
+                            event.preventDefault();
+                            // get max heart rate from form for calculations
+                            const maxHeartRate = Number(document.getElementById('maxHeartRate').value);
+                            //two-dimensional array used to set zone name and calculate min-max of each zone
+                            const zones = [
+                                ["Zone 1: Very Light", maxHeartRate * 0.5, maxHeartRate * 0.6],
+                                ["Zone 2: Light", maxHeartRate * 0.6, maxHeartRate * 0.7],
+                                ["Zone 3: Moderate", maxHeartRate * 0.7, maxHeartRate * 0.8],
+                                ["Zone 4: Hard", maxHeartRate * 0.8, maxHeartRate * 0.9],
+                                ["Zone 5: Max", maxHeartRate * 0.9, maxHeartRate],
+                            ];
+                            tableBody.innerHTML = '';
+                            // Loop to format array data and output to table
+                            zones.forEach(zone => {
+                                const [name, min, max] = zone;
+                                const targetRange = `${min} - ${max}`;
+                                const row = document.createElement('tr');
+                                const zoneName = document.createElement('td');
+                                zoneName.textContent = name;
+                                const targetRangeCell = document.createElement('td');
+                                targetRangeCell.textContent = `${targetRange} bpm`;
+                                row.appendChild(zoneName);
+                                row.appendChild(targetRangeCell);
+                                tableBody.appendChild(row);
+                            });
+                        });
+                    </script>
+
                 </tbody>
             </table>
         </div>
@@ -131,30 +167,7 @@
        first.onchange = function () {
        second.value = 220 - first.value;
        };
-    </script>
-    <script>
-        // Target input form to get required data
-        const form = document.getElementById('max-hr-form');
-        // Target correct part of table for the output
-        const tableContent = document.querySelector('#zones-table tbody');
-
-        // listen for the form to be submitted
-        form.addEventListener('submit', event => {
-        // Prevent the form default submit action
-        event.preventDefault();
-        // get max heart rate from form for calculations
-        const maxHeartRate = Number(document.getElementById('maxHeartRate').value);
-        //two-dimensional array used to set zone name and calculate min-max of each zone
-        const zones = [
-            ["Zone 1: Low Intensity", maxHeartRate * 0.5, maxHeartRate * 0.6],
-            ["Zone 2: Weight Control", maxHeartRate * 0.6, maxHeartRate * 0.7],
-            ["Zone 3: Aerobic", maxHeartRate * 0.7, maxHeartRate * 0.8],
-            ["Zone 4: Anaerobic", maxHeartRate * 0.8, maxHeartRate * 0.9],
-            ["Zone 5: Maximum", maxHeartRate * 0.9, maxHeartRate],
-            ];
-    });
-    </script>
-    
+    </script>   
 </body>
 
 </html>
