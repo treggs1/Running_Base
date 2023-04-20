@@ -115,7 +115,9 @@
                             // Loop to format array data and output to table
                             zones.forEach(zone => {
                                 const [name, min, max] = zone;
-                                const targetRange = `${min} - ${max}`;
+                                const min1 = parseInt(min);
+                                const max1 = parseInt(max);
+                                const targetRange = `${min1} - ${max1}`;
                                 const row = document.createElement('tr');
                                 const zoneName = document.createElement('td');
                                 zoneName.textContent = name;
