@@ -1,3 +1,5 @@
+/* Global Styles */
+
 * {
     box-sizing: border-box;
 }
@@ -14,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 600;   
 }
+
 /* Grid layout */
 
 body {
@@ -27,19 +30,6 @@ body {
         "footer footer footer";
 }
 
-/*
-@media only screen and (min-width: 960px){
-
-    body {
-        grid-template-columns: 1rem minmax(200px, 600px) minmax(200px, 600px) minmax(200px, 600px) 1rem;
-        grid-template-areas:
-            "header header header header header"
-            "hero   hero    hero   hero    hero"
-            "...... main   main   main ....... "
-            "footer footer footer footer footer";
-    }
-}
-*/
 header {
     grid-area: header;
 }
@@ -124,6 +114,7 @@ footer {
   }
 
   /* modification to make underline permanent on active page */
+
   .active:before {
     content: "";
     position: absolute;
@@ -283,6 +274,7 @@ fieldset {
 }
 
 /* reverse order to sort the label being after the input */
+
 .form-Input_Wrapper {
     display: flex;
     flex-direction: column-reverse;
