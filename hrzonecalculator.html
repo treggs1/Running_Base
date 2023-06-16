@@ -16,6 +16,12 @@
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&family=Quicksand">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <!-- Internal CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Running Base - Heart Rate Zone Calculator</title>
@@ -91,7 +97,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
+
                     <script>
                         // Target input form to get required data
                         const form = document.getElementById('max-hr-form');
@@ -99,7 +105,7 @@
                         const tableBody = document.querySelector('#zones-table tbody');
                         // Listen for the form to be submitted
                         form.addEventListener('submit', event => {
-                        // Prevent the form default submit action
+                            // Prevent the form default submit action
                             event.preventDefault();
                             // get max heart rate from form for calculations
                             const maxHeartRate = Number(document.getElementById('maxHeartRate').value);
@@ -161,15 +167,15 @@
 
     <!-- script to set maxHeartRate form field to 220 - age modified from https://stackoverflow.com/questions/2004315/populate-1-form-field-based-on-another -->
     <script>
-       var first = document.getElementById('age'),
-       second = document.getElementById('maxHeartRate');
+        var first = document.getElementById('age'),
+            second = document.getElementById('maxHeartRate');
 
-       second.value = first.value;
+        second.value = first.value;
 
-       first.onchange = function () {
-       second.value = 220 - first.value;
-       };
-    </script>   
+        first.onchange = function () {
+            second.value = 220 - first.value;
+        };
+    </script>
 </body>
 
 </html>
