@@ -233,11 +233,65 @@ To clone the Running_Base repository:
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+Testing was conducted throughout the development process using Chrome developer tools to identify and help rectify any issues as they arose.
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+### W3C Validator
+
+The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+Home page
+
+![screenshot](/assets/readme/html-validator-index.png)
+
+Building your base page
+
+![screenshot](/assets/readme/html-validator-building.png)
+
+Heart rate zones page
+
+![screenshot](/assets/readme/html-validator-hr-zones.png)
+
+Heart rate zone calculator page
+
+![screenshot](/assets/readme/html-validator-hr-calc.png)
+
+Contact us page
+
+![screenshot](/assets/readme/html-validator-contact.png)
+
+style.css
+
+![screenshot](/assets/readme/css-validator.png)
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
+
+Home page
+
+![screenshot](/assets/readme/lighthouse-index.png)
+
+Building your base page
+
+![screenshot](/assets/readme/lighthouse-building-your-base.png)
+
+Heart rate zones page
+
+![screenshot](/assets/readme/lighthouse-heart-rate-zones.png)
+
+Heart rate zone calculator page
+
+![screenshot](/assets/readme/lighthouse-heart-rate-calc.png)
+
+Contact us page
+
+![screenshot](/assets/readme/lighthouse-contact-us.png)
+
+Running lighthouse in mobile mode reduced the performance on all pages to around 75/100 this was mainly due to the hero image, bootstrap CSS and bootstrap JavaScript. 
+
+### Bugs
+
+As I have kept the layout of the site basic I haven't had any real bugs to deal with. There is an issue with the contact form as I have the labels appearing after the input they are for in the code, and CSS is used to move them back to their proper location on the live page. However, this caused screen readers to not read the label for the input box. To fix the problem, I added `aria-labels` to the form fields.
 
 - - -
 
