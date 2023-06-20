@@ -35,6 +35,11 @@ The Running Base website has been created to provide comprehensive information t
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [W3C Validator](#w3c-validator)
+  * [Lighthouse](#lighthouse)
+  * [Bugs](#bugs)
+  * [Testing User Stories](#testing-user-stories)
+  * [Full Testing](#full-testing)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -287,32 +292,83 @@ Contact us page
 
 ![screenshot](/assets/readme/lighthouse-contact-us.png)
 
-Running lighthouse in mobile mode reduced the performance on all pages to around 75/100 this was mainly due to the hero image, bootstrap CSS and bootstrap JavaScript. 
+Running lighthouse in mobile mode reduced the performance on all pages to around 75/100 this was mainly due to the hero image, bootstrap CSS and bootstrap JavaScript. Had I of used lighthouse earlier in the project I would have fixed the issue with the hero image for mobile.
 
 ### Bugs
 
 As I have kept the layout of the site basic I haven't had any real bugs to deal with. There is an issue with the contact form as I have the labels appearing after the input they are for in the code, and CSS is used to move them back to their proper location on the live page. However, this caused screen readers to not read the label for the input box. To fix the problem, I added `aria-labels` to the form fields.
 
+### Testing User Stories
+
+#### First Time Visitor Goals
+  * I want to be able to easily understand what the site is about.
+  ![screenshot](/assets/readme/user-about.png)
+  * I want to be able to find the information I need and navigate to it quickly.
+  ![screenshot](/assets/readme/feature-navbar.png)
+  * I want to be able to find social madia links easily.
+  ![screenshot](/assets/readme/feature-footer.png)
+  * As a beginner, I want to learn how to train for running properly and reduce the risk of injury.
+  ![screenshot](/assets/readme/basic-training.png)
+  * I want to improve my running skills and get faster.
+  ![screenshot](/assets/readme/advanced-training.png)
+
+  #### Returning Visitor Goals
+
+* I want to quickly get back to the information I need with minimal clicks.
+ ![screenshot](/assets/readme/feature-navbar.png)
+* I want to be able to contact Running Base to ask for aditional information if needed.
+![screenshot](/assets/readme/feature-contact-form.png)
+
+### Full Testing
+
+The following tests were performed on the following browsers (google chrome, mozilla firefox, microsoft edge) and on an android smart phone.
+
+The responsiveness was tested on each browser to insure it was responsive at all screen widths from 2560px to 320px.
+
+Links.
+
+The links on all pages were tested including external links to ensure they worked as expected and in the case of the external links that they opened a new browser tab.
+All worked as expected
+
+Contact Us Form.
+
+The contact for was tested to ensure that all required fields had to be filled in before sending and if not the user would be prompted to fill in the correct field.
+The redirect page was also tested to make sure it redirected on the different browsers.
+All worked as expected
+
+Heart Rate Zone Calculator
+
+The heart rate zone calculator was tested on the different browsers to insure it worked as intended.
+It worked as expected
+
+
 - - -
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
 
 The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+Heart rate zone calculator - I originally wrote this in PHP as I have reasonable experience with that language and its quite simple to do with php. As GitHub Pages doesn't support PHP I had to learn to do it with JavaScript I used a Book "Javascript from beginner to professional" published by Packt> to help translate from PHP to JavaScript and https://www.w3schools.com/js/.
+
+Contact Form - I modified the code for the form also from a book published by Packt> called "Responsive Web Design With HTML5 and CSS" by Ben Frain.
+
+https://github.com/kera-cudmore - readme template and example of a good readme 
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+I wrote the content for the website using the following websites as a reference.
+[polar.com/uk-en](https://www.polar.com/uk-en) and 
+[runnersworld.com](https://www.runnersworld.com)
+
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+A stock image from [heroimages.com](https://heroimages.com/) was used for the hero image.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+- Cohort Facilitator - [Iris Smok](https://ie.linkedin.com/in/irissmok)
+- Mentor for help planning the project
