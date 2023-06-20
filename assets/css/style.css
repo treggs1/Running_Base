@@ -10,6 +10,7 @@ body {
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    color: #212529;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,6 +55,7 @@ footer {
     font-weight:600;
     text-transform:uppercase;   
     font-family: 'Orbitron', sans-serif;
+    color: #212529;
 }
 
 @media (max-width: 400px) {
@@ -194,7 +196,7 @@ footer {
 }
 
 #footer_social i {
-    color: #333;
+    color: #212529;
 }
 
 #footer_social i:hover {
