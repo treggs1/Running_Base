@@ -21,7 +21,6 @@ The Running Base website has been created to provide comprehensive information t
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -63,16 +62,13 @@ The Running Base website has been created to provide comprehensive information t
 * I want to quickly get back to the information I need with minimal clicks.
 * I want to be able to contact Running Base to ask for aditional information if needed.
 
+- - -
 
 ## Design
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+I have used a very basic colour scheme to keep the site looking clean and professional this also helps with accessibility. The background is white #ffffff and text is a dark grey #212529 any other color is provided by images on the site. 
 
 ### Typography
 
@@ -102,6 +98,8 @@ Wireframes were made using [Balsamiq](https://balsamiq.com/). I opted not to cre
 
 ![Wireframe Desktop](/assets/readme/wireframe-desktop.png "Wireframe for desktop")
 
+- - -
+
 ## Features
 
 The pages of the website are as follows:
@@ -112,6 +110,7 @@ The pages of the website are as follows:
 - Heart rate zone calculator page
 - Contact us page 
 - Confirmation page that redirects user to homepage after submitting contact form.
+ 
 
 ### Existing Features
 
@@ -159,12 +158,14 @@ The pages of the website are as follows:
 
 ### Future Implementations
 
-The first thing that would be added to the website when deployed on a live server would be a blog I would of impplemented this already but as github pages doesn't support php this wasn't possible at this time. The blog would be used for more advanced training plans, information about running gear and different types of running
+Upon deployment of the website on a live server, the first addition would be a blog. 
+Due to the lack of support for PHP on GitHub pages, this implementation was not possible at this time. The blog will serve as a platform for more advanced training plans, information about running gear, and different types of running.
 
 ### Accessibility
 
 I have made every effort to increase the accessibility of the website. I have incorporated various features such as aria-labels for social media icons to enable easy use of screen readers by all individuals. Additionally, I have added a span over the hero background image to enable screen readers to provide a comprehensive description of the content. To ensure further accessibility, I have used semantic HTML throughout the website.
 
+- - -
 
 ## Technologies Used
 
@@ -192,26 +193,42 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 
+- - -
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, https://github.com/treggs1/Running_Base
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+To fork the Running_Base repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, https://github.com/treggs1/Running_Base
+3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+To clone the Running_Base repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, https://github.com/treggs1/Running_Base
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+- - -
 
 
 ## Testing
@@ -222,6 +239,7 @@ Testing requirements aren't massive for your first project, however if you start
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
 
+- - -
 
 ## Credits
 
