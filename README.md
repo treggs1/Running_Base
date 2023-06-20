@@ -1,16 +1,13 @@
 # Running Base
 
-👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
-
 The Running Base website has been created to provide comprehensive information to beginner and inexperienced runners on building their base fitness for running. Additionally, the website offers valuable insights to more experienced runners who may be struggling to make further progress in their running training. Over time, the website will be expanded to include more advanced running programs and resources. Designed with full responsiveness and accessibility in mind, the website ensures optimal user experience for all visitors.
 
-Add an image of the finished site here. I like to use [amiresponsive](https://ui.dev/amiresponsive) to get an image of my site on all device sizes, and amiresponsive allows you to click links on the page and scroll, so each device can show a different element of your site.
+![Am I Responsive?](/assets/readme/amiresponsive.png "Am I Responsive? Website Mockup")
 
-Add a link to the live site here, for Milestone 1 this will be the GitHub Pages Link from when you deployed the site.
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
+[View Running Base on Github Pages](https://treggs1.github.io/Running_Base/)
 
 ---
+
 
 ## CONTENTS
 
@@ -24,7 +21,6 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -39,6 +35,11 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
     * [How to Clone](#how-to-clone)
 
 * [Testing](#testing)
+  * [W3C Validator](#w3c-validator)
+  * [Lighthouse](#lighthouse)
+  * [Bugs](#bugs)
+  * [Testing User Stories](#testing-user-stories)
+  * [Full Testing](#full-testing)
 
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -47,6 +48,7 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
   * [Acknowledgments](#acknowledgments)
 
 ---
+
 
 ## User Experience (UX)
 
@@ -57,7 +59,7 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 * I want to be able to easily understand what the site is about.
 * I want to be able to find the information I need and navigate to it quickly.
 * I want to be able to find social madia links easily.
-* As a beginner, I want to learn how to run properly.
+* As a beginner, I want to learn how to train for running properly and reduce the risk of injury.
 * I want to improve my running skills and get faster.
 
 #### Returning Visitor Goals
@@ -65,122 +67,308 @@ If you want to add optional [shields.io](https://shields.io) badges to your READ
 * I want to quickly get back to the information I need with minimal clicks.
 * I want to be able to contact Running Base to ask for aditional information if needed.
 
-## Design
+- - -
 
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
+## Design
 
 ### Colour Scheme
 
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-
-I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few.
+I have used a very basic colour scheme to keep the site looking clean and professional this also helps with accessibility. The background is white #ffffff and text is a dark grey #212529 any other color is provided by images on the site. 
 
 ### Typography
 
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
+Google Fonts was used for the following fonts:
 
-Why did you choose the font you have?
-Is this an accessibly friendly font?
-What weights have you included?
-
-I also like to include an image of the fonts chosen as a reference.
-
-[Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
+* Orbitron is used for logo in the header on the site. It is a sans-serif font.
+* Quicksand is used for all other text and headings on the site. It is a sans-serif font.
+* sans-serif was used as a backup if the fonts can not be loaded from Google Fonts.
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+A stock image from [heroimages.com](https://heroimages.com/) was used for the hero image.
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+Wireframes were made using [Balsamiq](https://balsamiq.com/). I opted not to create wireframes for each page on all devices instead, I designed wireframes for three different pages on three distinct devices, with the main content section being the only element that varies across each page to maintain consistency across the site.
 
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+#### Mobile wireframe
 
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+![Wireframe Mobile](/assets/readme/wireframe-mobile.png "Wireframe for mobile")
+
+#### Tablet wireframe
+
+![Wireframe Tablet](/assets/readme/wireframe-tablet.png "Wireframe for tablet")
+
+#### Desktop wireframe
+
+![Wireframe Desktop](/assets/readme/wireframe-desktop.png "Wireframe for desktop")
+
+- - -
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+The pages of the website are as follows:
 
-This section can be used to explain what pages your site is made up of.
+- Home page
+- Building your base page
+- Heart rate zones page
+- Heart rate zone calculator page
+- Contact us page 
+- Confirmation page that redirects user to homepage after submitting contact form.
+ 
 
-### General features on each page
+### Existing Features
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+- **Feature #1 Navbar**
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+- The navigation bar is prominently displayed at the top of every page, featuring the website's logo/brand name as well as quick links to every page for convenient and accessible browsing.
+
+![screenshot](/assets/readme/feature-navbar.png)
+
+- **Feature #2 Navbar mobile toggler**
+
+- The mobile navbar toggler simplifies the navbar for small devices by collapsing it into a menu button. Clicking the button opens a list of website pages for easier navigation. This provides a cleaner design while still giving users all the necessary navigation options. Clicking the icon toggles the menu between its open and cloased states.
+
+![screenshot](/assets/readme/feature-mobile-menu.png)
+
+- **Feature #3 Hero image with cover text**
+
+- The site's tagline is used as the cover text over the hero image on the homepage. On most other pages, the page title is used - except on the contact form confirmation page, where it is used to confirm the message was sent and to inform the user that they will be redirected to homepage shortly.
+
+![screenshot](/assets/readme/feature-hero-image-text.png)
+
+**Feature #4 Footer**
+
+- The footer includes copyright information and social links for easy access to our social media.
+
+![screenshot](/assets/readme/feature-footer.png)
+
+**Feature #5 Contact form**
+
+- A basic contact form for the user to contact us. (all fields are required)
+
+![screenshot](/assets/readme/feature-contact-form.png)
+
+**Feature #6 Heart rate zone calculator**
+
+- The heart rate zone calculator requires the user to input either their age or for more accuracy and if known their max heart rate it will then tell them the heart rate ranges they should be in for each training zone.
+
+![screenshot](/assets/readme/feature-hr-zone-calc.png)
+
+**Feature #6 Confirmation page**
+
+- Confirm the message was sent and informs the user that they will be redirected to homepage.
+
+![screenshot](/assets/readme/feature-redirect.png)
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+Upon deployment of the website on a live server, the first addition would be a blog. 
+Due to the lack of support for PHP on GitHub pages, this implementation was not possible at this time. The blog will serve as a platform for more advanced training plans, information about running gear, and different types of running.
 
 ### Accessibility
 
 I have made every effort to increase the accessibility of the website. I have incorporated various features such as aria-labels for social media icons to enable easy use of screen readers by all individuals. Additionally, I have added a span over the hero background image to enable screen readers to provide a comprehensive description of the content. To ensure further accessibility, I have used semantic HTML throughout the website.
 
-## Technologies Used
+- - -
 
-👩🏻‍💻 View an example of a completed Technologies Used section [here](https://github.com/kera-cudmore/Bully-Book-Club#Technologies-Used)
+## Technologies Used
 
 ### Languages Used
 
-Make a note here of all the languages used in creating your project. For the first project this will most likely just be HTML & CSS.
+HTML and CSS were used to create this website.
 
 ### Frameworks, Libraries & Programs Used
 
-Add any frameworks, libraries or programs used while creating your project.
+Balsamiq - Used to create wireframes.
 
-Make sure to include things like git, GitHub, the program used to make your wireframes, any programs used to compress your images, did you use a CSS framework like Bootstrap? If so add it here (add the version used).
+Git - For version control.
 
-A great tip for this section is to include them as you use them, that way you won't forget what you ended up using when you get to the end of your project.
+Github - To save and store the files for the website.
+
+Bootstrap Version 5.3 - Code for the navigation bar.
+
+Google Fonts - To import the fonts used on the website.
+
+Font Awesome - For the iconography on the website.
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Favicon.io](https://favicon.io/) To create favicon and mobile bookmark icons.
+
+[Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
+
+- - -
 
 ## Deployment & Local Development
 
-👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
-
 ### Deployment
 
-Include instructions here on how to deploy your project. For your first project you will most likely be using GitHub Pages.
+Github Pages was used to deploy the live website. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, https://github.com/treggs1/Running_Base
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
 
 ### Local Development
 
-The local development section gives instructions on how someone else could make a copy of your project to play with on their local machine. This section will get more complex in the later projects, and can be a great reference to yourself if you forget how to do this.
-
 #### How to Fork
 
-Place instructions on how to fork your project here.
+To fork the Running_Base repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, https://github.com/treggs1/Running_Base
+3. Click the Fork button in the top right corner.
 
 #### How to Clone
 
-Place instructions on how to clone your project here.
+To clone the Running_Base repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, https://github.com/treggs1/Running_Base
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+- - -
+
 
 ## Testing
 
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
+Testing was conducted throughout the development process using Chrome developer tools to identify and help rectify any issues as they arose.
 
-Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+### W3C Validator
+
+The W3C validator was used to validate the HTML on all pages of the website. It was also used to validate CSS in the style.css file.
+
+Home page
+
+![screenshot](/assets/readme/html-validator-index.png)
+
+Building your base page
+
+![screenshot](/assets/readme/html-validator-building.png)
+
+Heart rate zones page
+
+![screenshot](/assets/readme/html-validator-hr-zones.png)
+
+Heart rate zone calculator page
+
+![screenshot](/assets/readme/html-validator-hr-calc.png)
+
+Contact us page
+
+![screenshot](/assets/readme/html-validator-contact.png)
+
+style.css
+
+![screenshot](/assets/readme/css-validator.png)
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility, best practices and SEO of the website.
+
+Home page
+
+![screenshot](/assets/readme/lighthouse-index.png)
+
+Building your base page
+
+![screenshot](/assets/readme/lighthouse-building-your-base.png)
+
+Heart rate zones page
+
+![screenshot](/assets/readme/lighthouse-heart-rate-zones.png)
+
+Heart rate zone calculator page
+
+![screenshot](/assets/readme/lighthouse-heart-rate-calc.png)
+
+Contact us page
+
+![screenshot](/assets/readme/lighthouse-contact-us.png)
+
+Running lighthouse in mobile mode reduced the performance on all pages to around 75/100 this was mainly due to the hero image, bootstrap CSS and bootstrap JavaScript. Had I of used lighthouse earlier in the project I would have fixed the issue with the hero image for mobile.
+
+### Bugs
+
+As I have kept the layout of the site basic I haven't had any real bugs to deal with. There is an issue with the contact form as I have the labels appearing after the input they are for in the code, and CSS is used to move them back to their proper location on the live page. However, this caused screen readers to not read the label for the input box. To fix the problem, I added `aria-labels` to the form fields.
+
+### Testing User Stories
+
+#### First Time Visitor Goals
+  * I want to be able to easily understand what the site is about.
+  ![screenshot](/assets/readme/user-about.png)
+  * I want to be able to find the information I need and navigate to it quickly.
+  ![screenshot](/assets/readme/feature-navbar.png)
+  * I want to be able to find social madia links easily.
+  ![screenshot](/assets/readme/feature-footer.png)
+  * As a beginner, I want to learn how to train for running properly and reduce the risk of injury.
+  ![screenshot](/assets/readme/basic-training.png)
+  * I want to improve my running skills and get faster.
+  ![screenshot](/assets/readme/advanced-training.png)
+
+  #### Returning Visitor Goals
+
+* I want to quickly get back to the information I need with minimal clicks.
+ ![screenshot](/assets/readme/feature-navbar.png)
+* I want to be able to contact Running Base to ask for aditional information if needed.
+![screenshot](/assets/readme/feature-contact-form.png)
+
+### Full Testing
+
+The following tests were performed on the following browsers (google chrome, mozilla firefox, microsoft edge) and on an android smart phone.
+
+The responsiveness was tested on each browser to insure it was responsive at all screen widths from 2560px to 320px.
+
+Links.
+
+The links on all pages were tested including external links to ensure they worked as expected and in the case of the external links that they opened a new browser tab.
+All worked as expected
+
+Contact Us Form.
+
+The contact for was tested to ensure that all required fields had to be filled in before sending and if not the user would be prompted to fill in the correct field.
+The redirect page was also tested to make sure it redirected on the different browsers.
+All worked as expected
+
+Heart Rate Zone Calculator
+
+The heart rate zone calculator was tested on the different browsers to insure it worked as intended.
+It worked as expected
+
+
+- - -
 
 ## Credits
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
 
 The Credits section is where you can credit all the people and sources you used throughout your project.
 
 ### Code Used
 
-If you have used some code in your project that you didn't write, this is the place to make note of it. Credit the author of the code and if possible a link to where you found the code. You could also add in a brief description of what the code does, or what you are using it for here.
+Heart rate zone calculator - I originally wrote this in PHP as I have reasonable experience with that language and its quite simple to do with php. As GitHub Pages doesn't support PHP I had to learn to do it with JavaScript I used a Book "Javascript from beginner to professional" published by Packt> to help translate from PHP to JavaScript and https://www.w3schools.com/js/.
+
+Contact Form - I modified the code for the form also from a book published by Packt> called "Responsive Web Design With HTML5 and CSS" by Ben Frain.
+
+https://github.com/kera-cudmore - readme template and example of a good readme 
 
 ### Content
 
-Who wrote the content for the website? Was it yourself - or have you made the site for someone and they specified what the site was to say? This is the best place to put this information.
+I wrote the content for the website using the following websites as a reference.
+[polar.com/uk-en](https://www.polar.com/uk-en) and 
+[runnersworld.com](https://www.runnersworld.com)
+
 
 ###  Media
 
-If you have used any media on your site (images, audio, video etc) you can credit them here. I like to link back to the source where I found the media, and include where on the site the image is used.
+A stock image from [heroimages.com](https://heroimages.com/) was used for the hero image.
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
+- Cohort Facilitator - [Iris Smok](https://ie.linkedin.com/in/irissmok)
+- Mentor for help planning the project
