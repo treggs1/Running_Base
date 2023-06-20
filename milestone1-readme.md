@@ -8,6 +8,7 @@ The Running Base website has been created to provide comprehensive information t
 
 ---
 
+
 ## CONTENTS
 
 * [User Experience](#user-experience-ux)
@@ -44,26 +45,24 @@ The Running Base website has been created to provide comprehensive information t
 
 ---
 
+
 ## User Experience (UX)
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/Bully-Book-Club#user-experience-ux)
-
 ### User Stories
-
-Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
 
 #### First Time Visitor Goals
 
 * I want to be able to easily understand what the site is about.
 * I want to be able to find the information I need and navigate to it quickly.
 * I want to be able to find social madia links easily.
-* As a beginner, I want to learn how to run properly.
+* As a beginner, I want to learn how to train for running properly and reduce the risk of injury.
 * I want to improve my running skills and get faster.
 
 #### Returning Visitor Goals
 
 * I want to quickly get back to the information I need with minimal clicks.
 * I want to be able to contact Running Base to ask for aditional information if needed.
+
 
 ## Design
 
@@ -80,39 +79,92 @@ I like to include a palette of the colour scheme here, my favourite site for cre
 Google Fonts was used for the following fonts:
 
 * Orbitron is used for logo in the header on the site. It is a sans-serif font.
-* Quicksand is used for all text and headings on the site. It is a sans-serif font.
+* Quicksand is used for all other text and headings on the site. It is a sans-serif font.
+* sans-serif was used as a backup if the fonts can not be loaded from Google Fonts.
 
 ### Imagery
 
-Use this section to explain what sort of imagery you plan to use through your site.
+A stock image from [heroimages.com](https://heroimages.com/) was used for the hero image.
 
 ### Wireframes
 
-Add the images or links for your wireframes here.
+Wireframes were made using [Balsamiq](https://balsamiq.com/). I opted not to create wireframes for each page on all devices instead, I designed wireframes for three different pages on three distinct devices, with the main content section being the only element that varies across each page to maintain consistency across the site.
 
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+#### Mobile wireframe
 
-Some other options include [Figma](https://www.figma.com/), [AdobeXD](https://www.adobe.com/products/xd.html), [Sketch](https://www.sketch.com/?utm_source=google&utm_medium=cpc&adgroup=uxui&device=c&matchtype=e&utm_campaign=ADDICTMOBILE_SKETCH_GAD_DG_UK_T1_ALWAYS-ON_S_TRF_PROS_BRAND&utm_term=sketch&utm_source=google&utm_medium=cpc&utm_content=TOF_BRND__generic&hsa_acc=8710913982&hsa_cam=16831089317&hsa_grp=134620695759&hsa_ad=592060065319&hsa_src=g&hsa_tgt=kwd-14921750&hsa_kw=sketch&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwr4eYBhDrARIsANPywCjRIFn93DMezYnsyE5Fic_8l8kynJtut0GYMU01TiohHjwziFtlH0gaAhteEALw_wcB) and [Mockup](https://apps.apple.com/us/app/mockup-sketch-ui-ux/id1527554407) to name just a few! Or you can even go old school and get those wireframes completed using pen and paper. Just snap an image of the completed wireframes to add the images to the README.
+![Wireframe Mobile](/assets/readme/wireframe-mobile.png "Wireframe for mobile")
+
+#### Tablet wireframe
+
+![Wireframe Tablet](/assets/readme/wireframe-tablet.png "Wireframe for tablet")
+
+#### Desktop wireframe
+
+![Wireframe Desktop](/assets/readme/wireframe-desktop.png "Wireframe for desktop")
 
 ## Features
 
-👩🏻‍💻 View an example of a completed user experience section [here](https://github.com/kera-cudmore/TheQuizArms#Features)
+The pages of the website are as follows:
 
-This section can be used to explain what pages your site is made up of.
+- Home page
+- Building your base page
+- Heart rate zones page
+- Heart rate zone calculator page
+- Contact us page 
+- Confirmation page that redirects user to homepage after submitting contact form.
 
-### General features on each page
+### Existing Features
 
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
+- **Feature #1 Navbar**
 
-I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
+- The navigation bar is prominently displayed at the top of every page, featuring the website's logo/brand name as well as quick links to every page for convenient and accessible browsing.
+
+![screenshot](/assets/readme/feature-navbar.png)
+
+- **Feature #2 Navbar mobile toggler**
+
+- The mobile navbar toggler simplifies the navbar for small devices by collapsing it into a menu button. Clicking the button opens a list of website pages for easier navigation. This provides a cleaner design while still giving users all the necessary navigation options. Clicking the icon toggles the menu between its open and cloased states.
+
+![screenshot](/assets/readme/feature-mobile-menu.png)
+
+- **Feature #3 Hero image with cover text**
+
+- The site's tagline is used as the cover text over the hero image on the homepage. On most other pages, the page title is used - except on the contact form confirmation page, where it is used to confirm the message was sent and to inform the user that they will be redirected to homepage shortly.
+
+![screenshot](/assets/readme/feature-hero-image-text.png)
+
+**Feature #4 Footer**
+
+- The footer includes copyright information and social links for easy access to our social media.
+
+![screenshot](/assets/readme/feature-footer.png)
+
+**Feature #5 Contact form**
+
+- A basic contact form for the user to contact us. (all fields are required)
+
+![screenshot](/assets/readme/feature-contact-form.png)
+
+**Feature #6 Heart rate zone calculator**
+
+- The heart rate zone calculator requires the user to input either their age or for more accuracy and if known their max heart rate it will then tell them the heart rate ranges they should be in for each training zone.
+
+![screenshot](/assets/readme/feature-hr-zone-calc.png)
+
+**Feature #6 Confirmation page**
+
+- Confirm the message was sent and informs the user that they will be redirected to homepage.
+
+![screenshot](/assets/readme/feature-redirect.png)
 
 ### Future Implementations
 
-What features would you like to implement in the future on your site? Would you like to add more pages, or create login functionality? Add these plans here.
+The first thing that would be added to the website when deployed on a live server would be a blog I would of impplemented this already but as github pages doesn't support php this wasn't possible at this time. The blog would be used for more advanced training plans, information about running gear and different types of running
 
 ### Accessibility
 
 I have made every effort to increase the accessibility of the website. I have incorporated various features such as aria-labels for social media icons to enable easy use of screen readers by all individuals. Additionally, I have added a span over the hero background image to enable screen readers to provide a comprehensive description of the content. To ensure further accessibility, I have used semantic HTML throughout the website.
+
 
 ## Technologies Used
 
@@ -140,6 +192,7 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 [Am I Responsive?](https://ui.dev/amiresponsive) To show the website image on a range of devices.
 
+
 ## Deployment & Local Development
 
 👩🏻‍💻 View an example of a completed Deployment & Local Development section [here](https://github.com/kera-cudmore/TheQuizArms#Deployment)
@@ -160,6 +213,7 @@ Place instructions on how to fork your project here.
 
 Place instructions on how to clone your project here.
 
+
 ## Testing
 
 Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
@@ -167,6 +221,7 @@ Start as you mean to go on - and get used to writing a TESTING.md file from the 
 Testing requirements aren't massive for your first project, however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](milestone1-testing.md)
+
 
 ## Credits
 
